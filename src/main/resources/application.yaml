@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: resouce-server
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://localhost:9090/oauth2/jwks # URL to fetch the public keys for JWT validation
+
+
+server:
+  port: 8081
